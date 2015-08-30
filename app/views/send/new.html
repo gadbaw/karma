@@ -1,0 +1,13 @@
+<div>
+  <%= flash[:success] if flash[:success] %>
+
+  <%= form_tag('/send') %>
+    <%= label_tag 'phone number' %>
+    <%= phone_field_tag 'phone number' %>
+    <br>
+    <%= label_tag 'your message' %>
+    <%= text_field_tag 'your message' %>
+    <br>
+    <%= submit_tag "Send Message" %>
+
+</div>
